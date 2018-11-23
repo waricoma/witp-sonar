@@ -1,0 +1,28 @@
+{
+  "name": "witp-sonar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pack": "npm run pack:osx && npm run pack:win32 && npm run pack:win64",
+    "pack:osx": "electron-packager ../dist \"witp-sonar\" --out=dist/osx --platform=darwin --arch=x64 --electron-version=2.0.5 --icon=./icon.icns --protocol-name=\"witpsonar-protocol\" --protocol=\"witpsonar\" --overwrite",
+    "pack:win32": "electron-packager ../dist \"witp-sonar\" --out=dist/win32 --platform=win32 --arch=ia32 --electron-version=2.0.5 --icon=./icon.ico --overwrite",
+    "pack:win64": "electron-packager ../dist \"witp-sonar\" --out=dist/win64 --platform=win32 --arch=x64 --electron-version=2.0.5 --icon=./icon.ico --overwrite"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "about-window": "^1.12.1",
+    "detect-ssid": "^1.0.3",
+    "dgram": "^1.0.1",
+    "electron": "^3.0.0",
+    "jquery": "^3.3.1",
+    "node-wifi-scanner": "^1.0.0",
+    "os": "^0.1.1",
+    "path": "^0.12.7",
+    "request": "^2.88.0",
+    "uuid": "^3.3.2"
+  }
+}
