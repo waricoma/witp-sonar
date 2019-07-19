@@ -17,7 +17,7 @@
     "about-window": "^1.12.1",
     "detect-ssid": "^1.0.3",
     "dgram": "^1.0.1",
-    "electron": "^3.0.0",
+    "electron": "^5.0.7",
     "jquery": "^3.3.1",
     "node-wifi-scanner": "^1.0.0",
     "os": "^0.1.1",
